@@ -17,11 +17,11 @@ public class Key {
     return length;
   }
 
-  public void setOutput() {
+  public void setOutput(char output) {
     this.output = output;
   }
 
-  public void setLength() {
+  public void setLength(int length) {
     this.length = length;
   }
 }
