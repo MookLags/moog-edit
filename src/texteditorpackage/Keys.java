@@ -1,5 +1,7 @@
 package texteditorpackage;
 
+import java.util.ArrayList;
+
 public class Keys() {
   private ArrayList<Key> defArray;
 
