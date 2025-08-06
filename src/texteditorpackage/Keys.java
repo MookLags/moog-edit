@@ -3,10 +3,12 @@ package texteditorpackage;
 import java.util.ArrayList;
 
 public class Keys() {
+  //TODO turn this into Map
   private ArrayList<Key> defArray;
 
   public Keys() {
     super();
+    //TODO turn this into a for loop to generate easier
     defArray = new ArrayList<Key>(100);
     defArray.add(new Key("a", 1));
     defArray.add(new Key("b", 1));
@@ -34,5 +36,7 @@ public class Keys() {
     defArray.add(new Key("x", 1));
     defArray.add(new Key("y", 1));
     defArray.add(new Key("z", 1));
+    //TODO add special chars (!@#$%^&*1234567)
+    //TODO add whitespace chars
   }
 }
