@@ -1,0 +1,33 @@
+GUI Framework: Java Swing
+
+Something like a terminal that acts like a simplified version of gedit.
+
+paint rect on screen
+
+two meta options:
+
+open and save
+
+each line is an array (Or look into rope data type, that might work)
+
+state management stuff:
+  cursorLocation will be array.index
+
+model class for key
+  char output
+  int length
+
+design font myself? might be fun
+
+assign char values to keys 
+
+key onclick produces assigned char value at cursorLocation && cursorLocation++
+
+how will I handle soft wrapping?
+
+maybe in state management determine with math and modulus how many grid boxes are able to fit in the width of the line
+
+if length of the working array is greater than maxGridLength then create new array, place it beneath currentLine and cursorLocation is the new location 1, 1
+
+in state management when moving arrow up or down, remember the max y coordinate in array for line. If the latest char output in a given line array is at a smaller
+index than the remembered max y coordinate, then go there. Otherwise, go to the remembered y coordinate
