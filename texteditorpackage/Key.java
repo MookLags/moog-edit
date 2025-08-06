@@ -1,3 +1,5 @@
+package texteditorpackage;
+
 public class Key {
   private char output;
   private int length;
